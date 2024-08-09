@@ -1,0 +1,49 @@
+{% extends 'info/base.html' %}
+
+    {% block content %}
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">
+                        Timetable
+                    </h2>
+                </div>
+                <div id="no-more-tables">
+                    <table class="col-sm-12 table table-bordered table-striped table-condensed cf">
+                        <thead class="cf">
+                            <tr>
+                                <th>      </th>
+                                <th>9:00 - 10:00</th>
+                                    <th>10:00 - 10:50</th>
+                                    <th>10:50 - 11:40</th>
+                                    <th>11:40 - 12:30</th>
+                                    <th>12:30 - 01:15</th>
+                                    <th>Lunch</th>
+                                    <th>01:15 - 02:05</th>
+                                    <th>02:05 - 02:55</th>
+                                    <th>02:55 - 03:40</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in matrix %}
+                            <tr>
+                                {% for j in i %}
+                                    {% if forloop.counter == 1 %}
+                                    <td><b>{{ j }}</b></td>
+                                    {% else %}
+                                    <td>{{ j }}</td>
+                                    {% endif %}
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    {% endblock %}
