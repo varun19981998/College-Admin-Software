@@ -1,5 +1,6 @@
-# College-Admin-Software
-A college management system built using the Django framework. It is designed for interactions between students and teachers. Features include attendance, marks and timetable.
+# College Administration Software
+A college management system built using Django framework. It is designed for interactions between students and teachers. Features include attendance, marks and time table.
+
 
 #Team member
 1-Varun Pratap Singh.
